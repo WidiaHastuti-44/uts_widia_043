@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #8aa6c3;
+    color: #f5f6f4;
+    line-height: 1.7
+}
+
+header {
+    background: #0d245a;
+    color: rgb(245, 246, 245);
+    padding: 15px 20px
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 4px
+}
+
+header p {
+    color: #e8ece9
+}
+
+nav {
+    background: #0c0b30;
+    display: flex;
+    gap: 35px;
+    padding: 10px;
+}
+
+nav a {
+    color: #46b4d2;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent
+}
+
+nav a:hover {
+    color: rgb(107, 149, 175);
+    border-bottom-color: #e9eef0
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px
+}
+
+section {
+    background: rgb(10, 24, 82);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(64, 20, 174, 0.07)
+}
+
+section h2 {
+    font-size: 24px;
+    color: #d6dbdb;
+    margin-bottom: 10px
+}
+
+.katalog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px
+}
+
+.card {
+    background: #8cbad3;
+    border: 1px solid #146f97;
+    padding: 20px;
+    border-radius: 30px;
+    transition: 0.2s
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(226, 14, 14, 0.08)
+}
+
+.card h3 {
+    color: #02021a
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+@media (min-width:768px) {
+    .katalog {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #f3f6f3;
+    border-radius: 8px;
+    font-size: 15px
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #131313
+}
+
+button {
+    margin-top: 22px;
+    padding: 14px;
+    width: 100%;
+    background: #f0f1f5;
+    color: rgb(2, 19, 111);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px
+}
+
+button:hover {
+    background: #107db0
+}
+
+.error {
+    color: #ef4444;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+    min-height: 18px
+}
+
+.hasilSewa {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f1f5f9;
+}
+
+footer {
+    background: #0f172a;
+    color: #e3e7e9;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 14px
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: start;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-row label {
+    width: 150px;
+    min-width: 150px;
+    font-weight: 600;
+    color: #f1f2ee;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+.form-row .field {
+    width: 100%;
+    min-width: 0;
+}
+
+.form-row input,
+.form-row select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #299aec;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 15px;
+}
+
+@media (max-width:600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .form-row label {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .form-row .field {
+        width: 100%
+    }
+}
+
+form button {
+    width: calc(100% - 165px);
+    margin-left: 165px;
+    margin-top: 20px;
+}
+
+@media (max-width:600px) {
+    form button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.info-dashboard {
+    background: #8cbad3;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #093859;
+}
+
+.info-dashboard h3 {
+    color: #131416;
+    margin-bottom: 8px;
+}
+
+.info-dashboard p {
+    color: #000915;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sewa - 043</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rental Mobil</h1>
+    </header>
+    <nav>
+        <a href="Dashboard_043.html">Beranda</a>
+        <a href="Katalog_043.html">Katalog Mobil</a>
+        <a href="Form_sewa_043.html">Form Penyewaan</a>
+    </nav>
+    <main>
+        <section style="max-width:750px;margin:auto">
+            <h2>Form Penyewaan Mobil</h2>
+            <form id="formSewa043" novalidate>
+                <div class="form-row">
+                    <label for="nama">Nama Lengkap:</label>
+                    <div class="field">
+                        <input type="text" id="nama" required placeholder="Contoh: widia 043">
+                        <span class="error" id="errNama"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="mobil">Pilihan Mobil:</label>
+                    <div class="field">
+                        <select id="mobil" required>
+                            <option value="">-- Pilih Mobil 043 --</option>
+                            <option value="BMW">BMW - Rp 2.300.043/hari</option>
+                            <option value="Innova">Innova - Rp 550.043/hari</option>
+                            <option value="HRV">HRV - Rp 750.043/hari</option>
+                            <option value="Brio">Brio - Rp 400.043/hari</option>
+                            <option value="Ferrari">Ferrari - Rp 4.450.043/hari</option>
+                            <option value="Alphard">Alphard - Rp 1.200.043/hari</option>
+                        </select>
+                        <span class="error" id="errMobil"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="hari">Lama Sewa (Hari):</label>
+                    <div class="field">
+                        <input type="number" id="hari" required min="1" placeholder="1">
+                        <span class="error" id="errHari"></span>
+                    </div>
+                </div>
+
+                <button type="submit">Sewa Sekarang</button>
+            </form>
+            <div id="hasilSewa"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Rental Mobil</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
